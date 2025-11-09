@@ -623,144 +623,192 @@
         </div>
     </section>
 
+<section id="projects" class="mb-5 py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-dark">
+      <i class="fas fa-laptop-code me-2 text-primary"></i> Projects
+    </h2>
 
+    <!-- Filter Buttons -->
+    <div class="text-center mb-5">
+      <div class="btn-group flex-wrap" role="group">
+        <button type="button" class="btn btn-outline-primary active m-1" data-filter="all">All</button>
+        <button type="button" class="btn btn-outline-primary m-1" data-filter="html">HTML/CSS</button>
+        <button type="button" class="btn btn-outline-primary m-1" data-filter="bootstrap">Bootstrap/JavaScript</button>
+        <button type="button" class="btn btn-outline-primary m-1" data-filter="react">React</button>
+        <button type="button" class="btn btn-outline-primary m-1" data-filter="photoshop">Photoshop</button>
+      </div>
+    </div>
 
-    <section id="projects" class="mb-5 py-5">
-        <h2 class="text-center mb-5 text-dark">
-            <i class="fas fa-laptop-code me-2 text-primary"></i> Projects
-        </h2>
+    <div class="row row-cols-1 row-cols-md-2 g-5" id="projectsContainer">
+      <!-- HTML/CSS project -->
+      <div class="col project-card" data-tags="html,css">
+        <div class="card h-100 card-project bg-img">
+          <div class="card-header card-icon text-center">
+            <i class="fas fa-image fa-3x"></i>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bold">Responsive Image Grid</h5>
+            <p class="card-text text-dark-75">
+              A responsive photo gallery built with HTML and CSS Grid for responsive layouts with smooth hover effects.
+            </p>
+          </div>
+          <div class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">HTML</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">CSS</span>
+            </div>
+            <a href="https://chandu16622.github.io/photo-gallery1/" target="_blank"
+              class="btn btn-sm btn-outline-dark mt-2 mt-sm-0">View Live <i
+                class="fas fa-external-link-alt ms-1"></i></a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Bootstrap/JavaScript project -->
+      <div class="col project-card" data-tags="javascript,bootstrap">
+        <div class="card h-100 card-project bg-task">
+          <div class="card-header card-icon text-center">
+            <i class="fas fa-list-check fa-3x text-white"></i>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bold text-white">Vanilla JS Task Manager</h5>
+            <p class="card-text text-light">
+              A foundational web app built with Vanilla JS demonstrating CRUD operations using the DOM API and local storage.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">JavaScript</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">DOM</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">Bootstrap</span>
+            </div>
+            <a href="https://chandu16622.github.io/javascript/" target="_blank"
+              class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
+                class="fas fa-external-link-alt ms-1"></i></a>
+          </div>
+        </div>
+      </div>
 
+      <!-- React project -->
+      <div class="col project-card" data-tags="react,bootstrap,javascript">
+        <div class="card h-100 card-project bg-img">
+          <div class="card-header card-icon text-center">
+            <i class="fas fa-map-marked-alt fa-3x"></i>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bold">Destination Discovery</h5>
+            <p class="card-text text-dark-75">
+              A React-based travel destination platform helping users explore popular destinations with rich visuals and responsive design.
+            </p>
+          </div>
+          <div class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">React</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">Bootstrap</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">JavaScript</span>
+            </div>
+            <a href="https://destinationplacesfordiscovery.netlify.app/" target="_blank"
+              class="btn btn-sm btn-outline-dark mt-2 mt-sm-0">
+              View Live <i class="fas fa-external-link-alt ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Another Bootstrap/JavaScript project -->
+      <div class="col project-card" data-tags="javascript,bootstrap">
+        <div class="card h-100 card-project bg-task">
+          <div class="card-header card-icon text-center">
+            <i class="fas fa-calculator fa-3x text-white"></i>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bold text-white">Responsive Calculator</h5>
+            <p class="card-text text-light">
+              A responsive calculator built using HTML, CSS, and JavaScript that handles sequential arithmetic operations and DOM manipulation.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
+            <div>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">JavaScript</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">DOM</span>
+              <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">Bootstrap</span>
+            </div>
+            <a href="https://chandu16622.github.io/calculator/" target="_blank"
+              class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
+                class="fas fa-external-link-alt ms-1"></i></a>
+          </div>
+        </div>
+      </div>
 
+    <!-- Photoshop Project -->
+<div class="col project-card" data-tags="photoshop">
+  <div class="card h-100 card-project text-white"
+       style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB9Yyws1lsLWBdHMN2dNHVN1r9EQ-tGCuvA&s') center/cover no-repeat;
+              border: none;
+              box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+              
+    <div class="card-header card-icon text-center border-0">
+      <i class="fab fa-adobe fa-3x text-light"></i>
+    </div>
 
-        <div class="tab-content" id="projectTabContent">
+    <div class="card-body p-4 text-center">
+      <h5 class="card-title fw-bold text-light">Nature Vibes Poster</h5>
+      <p class="card-text text-light">
+        Creative poster design using Adobe Photoshop with a modern gradient style and nature-inspired concept.
+      </p>
 
-            <div class="tab-pane fade show active" id="all" role="tabpanel">
+      <!-- View Button -->
+      <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#posterModal">
+        View Poster <i class="fas fa-external-link-alt ms-2"></i>
+      </button>
+    </div>
 
+    <div class="card-footer bg-transparent border-top-0 d-flex justify-content-center">
+      <span class="badge rounded-pill bg-light text-dark fw-bold fs-6">Photoshop</span>
+    </div>
+  </div>
+</div>
 
-                <div class="row row-cols-1 row-cols-md-2 g-5">
+<!-- Poster Modal -->
+<div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="posterModalLabel">Nature Vibes Poster</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="images/photoshop.png" alt="Nature Vibes Poster"
+             class="img-fluid rounded shadow">
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                    <div class="col">
-                        <div class="card h-100 card-project bg-img col-lg-10">
-                            <div class="card-header card-icon text-center">
-                                <i class="fas fa-image fa-3x"></i>
-                            </div>
-                            <div class="card-body p-6">
-                                <h5 class="card-title fw-bold">Responsive Image Grid</h5>
-                                <p class="card-text text-dark-75">
-                                    A responsive photo gallery can be built with just HTML and CSS, using as the main
-                                    container for a collection of images. To make the gallery responsive Built with HTML
-                                    & CSS Grid for responsive layouts with smooth hover effects.
-                                </p>
-                            </div>
-                            <div
-                                class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
-                                <div>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">HTML</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">CSS</span>
-                                </div>
-                                <a href="https://chandu16622.github.io/photo-gallery1/" target="_blank"
-                                    class="btn btn-sm btn-outline-dark mt-2 mt-sm-0">View Live <i
-                                        class="fas fa-external-link-alt ms-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
+  </div>
+</section>
 
-                    <!-- Project 2: JavaScript -->
-                    <div class="col">
-                        <div class="card h-100 card-project bg-task col-lg-10">
-                            <div class="card-header card-icon text-center">
-                                <i class="fas fa-list-check fa-3x text-white"></i>
-                            </div>
-                            <div class="card-body p-4">
-                                <h5 class="card-title fw-bold text-white">Vanilla JS Task Manager</h5>
-                                <p class="card-text text-light">
-                                    A foundational web application built purely with Vanilla JavaScript (ES6+),
-                                    demonstrating core CRUD (Create, Read, Update, Delete) operations. It effectively
-                                    manages tasks using the Document Object Model (DOM) API for dynamic rendering and
-                                    manipulation, and leverages local storage to persist data between sessions.
-                                </p>
-                            </div>
-                            <div
-                                class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
-                                <div>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">JavaScript</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">DOM</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">Bootstrap</span>
-                                </div>
-                                <a href="https://chandu16622.github.io/javascript/" target="_blank"
-                                    class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
-                                        class="fas fa-external-link-alt ms-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100 card-project bg-img col-lg-10">
-                            <div class="card-header card-icon text-center">
-                                <i class="fas fa-map-marked-alt fa-3x"></i>
-                            </div>
-
-                            <div class="card-body p-6">
-                                <h5 class="card-title fw-bold">Destination Discovery</h5>
-                                <p class="card-text text-dark-75">
-                                    A React-based travel destination platform built with React, Bootstrap, and
-                                    JavaScript.
-                                    It helps users explore popular destinations with rich visuals, city information,
-                                    and a responsive interface for a seamless browsing experience across devices.
-                                </p>
-                            </div>
-
-                            <div
-                                class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
-                                <div>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">React</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">Bootstrap</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">JavaScript</span>
-                                </div>
-
-                                <a href="https://destinationplacesfordiscovery.netlify.app/" target="_blank"
-                                    class="btn btn-sm btn-outline-dark mt-2 mt-sm-0">
-                                    View Live <i class="fas fa-external-link-alt ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-lg-6">
-                        <div class="card h-100 card-project bg-task col-lg-10">
-                            <div class="card-header card-icon text-center">
-                                <i class="fas fa-list-check fa-3x text-white"></i>
-                            </div>
-                            <div class="card-body p-6">
-                                <h5 class="card-title fw-bold text-white">Responsive calculator</h5>
-                                <p class="card-text text-light">
-                                    A fully functional, responsive calculator application developed using HTML, CSS, and
-                                    pure JavaScript. The logic handles sequential arithmetic operations and edge cases
-                                    (like division by zero) while utilizing Event Listeners for button interaction and
-                                    DOM manipulation for real-time display updates.
-                                </p>
-                            </div>
-                            <div
-                                class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
-                                <div>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">JavaScript</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">DOM</span>
-                                    <span class="badge rounded-pill bg-primary me-2 mb-2 fw-bold fs-6">Bootstrap</span>
-                                </div>
-                                <a href="https://chandu16622.github.io/calculator/" target="_blank"
-                                    class="btn btn-sm btn-outline-light mt-2 mt-sm-0">View Live <i
-                                        class="fas fa-external-link-alt ms-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-    </section>
-
+<script>
+document.querySelectorAll('[data-filter]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.getAttribute('data-filter');
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (filter === 'all' || card.getAttribute('data-tags').includes(filter)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
 
 
 
