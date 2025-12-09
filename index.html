@@ -622,7 +622,6 @@
             </div>
         </div>
     </section>
-
 <section id="projects" class="mb-5 py-5">
   <div class="container">
     <h2 class="text-center mb-4 text-dark">
@@ -636,11 +635,14 @@
         <button type="button" class="btn btn-outline-primary m-1" data-filter="html">HTML/CSS</button>
         <button type="button" class="btn btn-outline-primary m-1" data-filter="bootstrap">Bootstrap/JavaScript</button>
         <button type="button" class="btn btn-outline-primary m-1" data-filter="react">React</button>
-        <button type="button" class="btn btn-outline-primary m-1" data-filter="photoshop">Photoshop</button>
+        <button type="button" class="btn btn-outline-primary m-1" data-filter="photoshop">Photoshop</button> 
+         <button type="button" class="btn btn-outline-primary m-1" data-filter="figma">Figma</button>
       </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 g-5" id="projectsContainer">
+    <!-- PROJECT CARDS GRID -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5" id="projectsContainer">
+
       <!-- HTML/CSS project -->
       <div class="col project-card" data-tags="html,css">
         <div class="card h-100 card-project bg-img">
@@ -650,7 +652,7 @@
           <div class="card-body p-4">
             <h5 class="card-title fw-bold">Responsive Image Grid</h5>
             <p class="card-text text-dark-75">
-              A responsive photo gallery built with HTML and CSS Grid for responsive layouts with smooth hover effects.
+              A responsive photo gallery built with HTML and CSS Grid for smooth layouts & hover effects.
             </p>
           </div>
           <div class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
@@ -674,7 +676,7 @@
           <div class="card-body p-4">
             <h5 class="card-title fw-bold text-white">Vanilla JS Task Manager</h5>
             <p class="card-text text-light">
-              A foundational web app built with Vanilla JS demonstrating CRUD operations using the DOM API and local storage.
+              A powerful task manager with CRUD and local storage using Vanilla JS.
             </p>
           </div>
           <div class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
@@ -699,7 +701,7 @@
           <div class="card-body p-4">
             <h5 class="card-title fw-bold">Destination Discovery</h5>
             <p class="card-text text-dark-75">
-              A React-based travel destination platform helping users explore popular destinations with rich visuals and responsive design.
+              A React-based travel platform helping users explore destinations with modern UI.
             </p>
           </div>
           <div class="card-footer bg-light border-top-0 d-flex flex-wrap justify-content-between align-items-center">
@@ -716,7 +718,7 @@
         </div>
       </div>
 
-      <!-- Another Bootstrap/JavaScript project -->
+      <!-- Calculator Project -->
       <div class="col project-card" data-tags="javascript,bootstrap">
         <div class="card h-100 card-project bg-task">
           <div class="card-header card-icon text-center">
@@ -725,7 +727,7 @@
           <div class="card-body p-4">
             <h5 class="card-title fw-bold text-white">Responsive Calculator</h5>
             <p class="card-text text-light">
-              A responsive calculator built using HTML, CSS, and JavaScript that handles sequential arithmetic operations and DOM manipulation.
+              A responsive calculator using JavaScript, handling arithmetic operations smoothly.
             </p>
           </div>
           <div class="card-footer bg-transparent border-top-0 d-flex flex-wrap justify-content-between align-items-center">
@@ -741,26 +743,52 @@
         </div>
       </div>
 
-    <!-- Photoshop Project -->
-<div class="col project-card" data-tags="photoshop">
-  <div class="card h-100 card-project text-white"
-       style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-              url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB9Yyws1lsLWBdHMN2dNHVN1r9EQ-tGCuvA&s') center/cover no-repeat;
-              border: none;
-              box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+      <!-- Photoshop Project -->
+      <div class="col project-card" data-tags="photoshop">
+        <div class="card h-100 card-project text-white"
+          style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+          url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB9Yyws1lsLWBdHMN2dNHVN1r9EQ-tGCuvA&s') center/cover no-repeat;
+          border: none; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
               
+          <div class="card-header card-icon text-center border-0">
+            <i class="fab fa-adobe fa-3x text-light"></i>
+          </div>
+
+          <div class="card-body p-4 text-center">
+            <h5 class="card-title fw-bold text-light">Nature Vibes Poster</h5>
+            <p class="card-text text-light">
+              A creative poster made in Photoshop with nature-inspired colors & gradients.
+            </p>
+
+            <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#posterModal">
+              View Poster <i class="fas fa-external-link-alt ms-2"></i>
+            </button>
+          </div>
+
+          <div class="card-footer bg-transparent border-top-0 d-flex justify-content-center">
+            <span class="badge rounded-pill bg-light text-dark fw-bold fs-6">Photoshop</span>
+          </div>
+        </div>
+      </div> 
+      <!-- UI/UX Developer Poster Project -->
+<div class="col project-card" data-tags="photoshop,uiux,poster">
+  <div class="card h-100 card-project text-white"
+    style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB9Yyws1lsLWBdHMN2dNHVN1r9EQ-tGCuvA&s') center/cover no-repeat;
+    border: none; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+
     <div class="card-header card-icon text-center border-0">
       <i class="fab fa-adobe fa-3x text-light"></i>
     </div>
 
     <div class="card-body p-4 text-center">
-      <h5 class="card-title fw-bold text-light">Nature Vibes Poster</h5>
+      <h5 class="card-title fw-bold text-light">UI/UX Developer Roadmap Poster</h5>
       <p class="card-text text-light">
-        Creative poster design using Adobe Photoshop with a modern gradient style and nature-inspired concept.
+        A colorful, creative UI/UX roadmap poster designed with playful elements & clean layout.
       </p>
 
-      <!-- View Button -->
-      <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#posterModal">
+      <!-- Button to open the modal -->
+      <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#uiuxPosterModal">
         View Poster <i class="fas fa-external-link-alt ms-2"></i>
       </button>
     </div>
@@ -771,27 +799,116 @@
   </div>
 </div>
 
-<!-- Poster Modal -->
-<div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+
+<!-- Modal for UI/UX Poster -->
+<div class="modal fade" id="uiuxPosterModal" tabindex="-1" aria-labelledby="uiuxPosterLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content bg-dark text-white border-0 rounded-4">
+
       <div class="modal-header border-0">
-        <h5 class="modal-title fw-bold" id="posterModalLabel">Nature Vibes Poster</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title fw-bold" id="uiuxPosterLabel">UI/UX Developer Roadmap Poster</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
+
       <div class="modal-body text-center">
-        <img src="images/photoshop.png" alt="Nature Vibes Poster"
+        <!-- Add your uploaded image here -->
+        <img src="images/uiux-poster.png"
+             alt="UI/UX Developer Poster"
              class="img-fluid rounded shadow">
       </div>
+
       <div class="modal-footer border-0 justify-content-center">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+        <a href="#" class="btn btn-outline-light">
+          Download Poster
+        </a>
       </div>
+
     </div>
   </div>
 </div>
 
+
+      <!-- Figma Project -->
+ <!-- Modal for UI/UX Poster -->
+<div class="modal fade" id="uiuxPosterModal" tabindex="-1" aria-labelledby="uiuxPosterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="uiuxPosterLabel">UI/UX Developer Roadmap Poster</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/uiux-poster.png" alt="UI/UX Developer Poster" class="img-fluid rounded shadow">
+      </div>
+
+      <div class="modal-footer border-0 justify-content-center">
+        <a href="#" class="btn btn-outline-light">Download Poster</a>
+      </div>
+
+    </div>
   </div>
+</div>
+
+
+<!-- Figma Greeting Card Project Card -->
+<div class="col project-card" data-tags="figma,uiux,poster">
+  <div class="card h-100 card-project text-white"
+       style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB9Yyws1lsLWBdHMN2dNHVN1r9EQ-tGCuvA&s') 
+              center/cover no-repeat;
+              border: none; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+
+    <div class="card-header card-icon text-center border-0">
+      <i class="fab fa-adobe fa-3x text-light"></i>
+    </div>
+
+    <div class="card-body p-4 text-center">
+      <h5 class="card-title fw-bold text-light">Figma Greeting Card</h5>
+      <p class="card-text text-light">
+        A greeting card UI designed in Figma with clean layout & creative colors.
+      </p>
+
+      <!-- Correct Button -->
+      <button class="btn btn-outline-light mt-3"
+        data-bs-toggle="modal"
+        data-bs-target="#greetingCardModal">
+        View Poster <i class="fas fa-external-link-alt ms-2"></i>
+      </button>
+    </div>
+
+    <div class="card-footer bg-transparent border-top-0 d-flex justify-content-center">
+      <span class="badge rounded-pill bg-light text-dark fw-bold fs-6">Figma</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for Greeting Card (Corrected) -->
+<div class="modal fade" id="greetingCardModal" tabindex="-1" aria-labelledby="greetingCardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white border-0 rounded-4">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="greetingCardLabel">Greeting Card</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img src="images/greeting.png" alt="greeting card" class="img-fluid rounded shadow">
+      </div>
+
+      <div class="modal-footer border-0 justify-content-center">
+        <a href="#" class="btn btn-outline-light">Download Poster</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 </section>
+
 
 <script>
 document.querySelectorAll('[data-filter]').forEach(btn => {
